@@ -21,7 +21,7 @@ function assetInformation() {
       var totalsupply =
         obj.data.quantity / Math.pow(10, parseInt(obj.data.precision));
       document.getElementById("totalsupply").innerHTML =
-        "<strong>Total supply:</strong>" + " " + totalsupply.toLocaleString();
+        "Total supply:" + " " + totalsupply.toLocaleString();
       document.getElementById("walletName").innerText = foundationalWallet;
       totalSupply = totalsupply;
       totalDecimals = obj.data.precision;
@@ -56,7 +56,7 @@ function circulating() {
       );
       circulatingSupply = circulating;
       document.getElementById("total").innerHTML =
-        "<strong>Total circulating:</strong>" +
+        "Total circulating:" +
         " " +
         circulatingSupply.toLocaleString();
     }
