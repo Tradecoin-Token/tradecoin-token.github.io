@@ -545,11 +545,115 @@ for (i = 0; i < close.length; i++) {
                                         <!-- Tab content -->
                                         <div class="column is-5 is-offset-1">
                                             <div class="text-content">
-                                                <h4 class="title is-6 is-light animated preFadeInUp fadeInUp">TOKEN RATES</h4>
+                                                <h4 class="title is-6 is-light animated preFadeInUp fadeInUp">TOKEN DETAILS</h4>
                                                 <ul class="custom-bullet-list">
                                                     <li class="animated preFadeInUp fadeInUp">
                                                         <span>Tokens Sales</span>
                                                         <br>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Counter Up - jQuery Plugin Demo">
+  <meta name="author" content="Benjamin Intal">
+  <link rel="author" href="https://plus.google.com/113101541449927918834"/>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+  <style>
+    body {
+        margin: 40px 100px 150px;
+    }
+    * {
+        font-family: 'Open Sans', sans-serif;
+        -webkit-transition: all 400ms ease;
+        -moz-transition: all 400ms ease;
+        -o-transition: all 400ms ease;
+        transition: all 400ms ease;
+        text-align: center;
+    }
+    h1, h3 {
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    h3 {
+        margin-bottom: 30px;
+        color: #999;
+    }
+    span {
+        font-size: 66px;
+        color: #555;
+        margin-bottom: 350px;
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+    }
+    span > span {
+        margin-bottom: 0;
+    }
+    .circle {
+        background: #2980b9;
+        width: 200px;
+        line-height: 200px;
+        display: inline-block;
+        color: #fff;
+        border-radius: 100%;
+    }
+    code, code > span {
+        text-align: left;
+        display: block;
+        font-family: Monaco, monospace;
+        background: #444;
+        color: #fff;
+        padding: 20px;
+        font-size: 14px;
+        margin-bottom: 100px;
+    }
+    code > span {
+        padding: 0;
+        margin: 0;
+    }
+    @media only screen and (max-width: 1024px) {
+        span {
+            font-size: 33px;
+            margin-bottom: 200px;
+        }
+    }
+    @media only screen and (max-width: 800px) {
+        div > span {
+            font-size: 66px;
+            display: block;
+            width: 100% !important;
+            margin-bottom: 100px;
+        }
+        span {
+            font-size: 66px;
+        }
+        code {
+            margin-bottom: 100px;
+        }
+    }
+  </style>
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+    jQuery(document).ready(function( $ ) {
+        $('.counter').counterUp({
+            delay: 20,
+            time: 1000
+        });
+    });
+  </script>
+</head>
+
+<body> 
+    <div>
+        <span style="display: inline-block; width: 32%"><span><b>Total TRD Supply:&nbsp;</b></span><span class="counter">999,997,110,103</span></span>
+		<span style="display: inline-block; width: 32%"><span><b>Burned Supply:&nbsp;</b></span><span class="counter">28,89,897</span></span>
+		<span style="display: inline-block; width: 32%"><span><b>Value in BTC:&nbsp;<b></span><span class="counter">10,000</span></span>
+	</div>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="../jquery.counterup.min.js"></script>
+</body>											     
                                                         <span class="item-content">Total Supply: 1,000,000,000,000 TRD</span>
 			     
                                                     </li>
