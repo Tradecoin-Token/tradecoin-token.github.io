@@ -62,87 +62,6 @@ for (i = 0; i < close.length; i++) {
   }
 }
 </script>	
-	 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-</head>
-<style>
-body
-{
-background-color: #F5F5F5;
-}
-
-</style>
-<div style="width:380px;height:110px;border:5px solid #0000; background: #0564fc; border-radius: 20px; text-align: center; font-size:14px;font-family:courier,arial,helvetica;">
-    <font color="white"><br>
-
-	<div class="mypanel1"></div>
-	    <script>
-    $.getJSON('https://beta.neutrino.at/api/explorer/get_total_issued', 
-	function(data1) {
-        var text1 = `<b>Total Issued USDN:</b> $ ${(data1/1000000).toFixed(2)} M<br>`
-        $(".mypanel1").html(text1);
-    });
-    </script>
-
-	<div class="mypanel2"></div>
-	    <script>
-    $.getJSON('https://beta.neutrino.at/api/explorer/get_staked', 
-	function(data2) {
-        var text2 = `<b>Staking Balance USDN:</b> $ ${(data2/1000000).toFixed(2)} M<br>`
-        $(".mypanel2").html(text2);
-    });
-    </script>
-	
-    <div class="mypanel"></div>
-    <script>
-    $.getJSON('https://nodes.waves.exchange/addresses/data/3PNikM6yp4NqcSU8guxQtmR5onr2D4e8yTJ/rpd_balance_DG2xFkPdDwKUoBkzGAhQtLpSGzfXLiCYPEzeKH2Ad24p_3PG3iKrREHEC8BhRymLngyZGvcfNb7T8sNs', function(data) {
-        
-        var text = `<b>Tradecoin Staking USDN: $ ${(data.value/1000000).toFixed(2)}</b><br>`
-        $(".mypanel").html(text);
-    });
-	    </script>
-	
-	<div class="mypanel5"></div>
-    <script>
-    $.getJSON('https://beta.neutrino.at/api/explorer/get_annual_yield', function(data5) {
-        
-        var text5 = `<b>Annual Yeild (Est. Last 14 payments) :</b> ${data5.toFixed(2)}%<br>`
-        $(".mypanel5").html(text5);
-    });
-	    </script>	
-		
-</div>
-<br>
-<div style="width:375px;height:80px;border:5px solid #0000; background: #0564fc; border-radius: 20px; text-align: center; font-size:15px;font-family:courier,arial,helvetica;">
-    <font color="white"><b><br>
-
-	
-	<div class="mypanel3"></div>
-	    <script>
-    $.getJSON('https://beta.neutrino.at/api/explorer/get_current_price', 
-	function(data3) {
-        var text3 = `1 WAVES = $ ${data3} USDN<br>`
-        $(".mypanel3").html(text3);
-    });
-    </script>
-
-	<div class="mypanel4"></div>
-	    <script>
-    $.getJSON('https://beta.neutrino.at/api/explorer/get_current_price', 
-	function(data4) {
-        var text4 = `1 USDN = $ ${(1/data4).toFixed(8)} WAVES<br>`
-        $(".mypanel4").html(text4);
-    });
-    </script>		
-</div>
-	
-</body>
-</html>
-	    
-	    
     </head>
 <script src="https://widgets.coingecko.com/coingecko-coin-price-marquee-widget.js"></script>
 <coingecko-coin-price-marquee-widget  coin-ids="tradecoin-token,bitcoin,ethereum,litecoin,ripple,dogecoin,dash,pivx,waves,nanucoin,axai" currency="btc" background-color="#eeeeee" locale="en" font-color="#000000"></coingecko-coin-price-marquee-widget>
@@ -308,7 +227,87 @@ background-color: #F5F5F5;
 <!--script src="https://widgets.coingecko.com/coingecko-coin-converter-widget.js"></script-->
 <script type="text/javascript" src="https://unpkg.com/@coinpaprika/widget-currency/dist/widget.min.js"></script><div class="coinpaprika-currency-widget cp-widget__night-mode" data-primary-currency="usd" data-currency="trd-tradecoin" data-modules='["market_details"]' data-update-active="true" data-update-timeout="1m"></div>				
 <coingecko-coin-converter-widget  coin-id="tradecoin-token" currency="usd" background-color="#ffffff" font-color="#000000" locale="en" width="10"></coingecko-coin-converter-widget>
-<!--Coingecko widget end-->				
+<!--Coingecko widget end-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<style>
+body
+{
+background-color: #F5F5F5;
+}
+
+</style>
+<div style="width:380px;height:110px;border:5px solid #0000; background: #0564fc; border-radius: 20px; text-align: center; font-size:14px;font-family:courier,arial,helvetica;">
+    <font color="white"><br>
+
+	<div class="mypanel1"></div>
+	    <script>
+    $.getJSON('https://beta.neutrino.at/api/explorer/get_total_issued', 
+	function(data1) {
+        var text1 = `<b>Total Issued USDN:</b> $ ${(data1/1000000).toFixed(2)} M<br>`
+        $(".mypanel1").html(text1);
+    });
+    </script>
+
+	<div class="mypanel2"></div>
+	    <script>
+    $.getJSON('https://beta.neutrino.at/api/explorer/get_staked', 
+	function(data2) {
+        var text2 = `<b>Staking Balance USDN:</b> $ ${(data2/1000000).toFixed(2)} M<br>`
+        $(".mypanel2").html(text2);
+    });
+    </script>
+	
+    <div class="mypanel"></div>
+    <script>
+    $.getJSON('https://nodes.waves.exchange/addresses/data/3PNikM6yp4NqcSU8guxQtmR5onr2D4e8yTJ/rpd_balance_DG2xFkPdDwKUoBkzGAhQtLpSGzfXLiCYPEzeKH2Ad24p_3PG3iKrREHEC8BhRymLngyZGvcfNb7T8sNs', function(data) {
+        
+        var text = `<b>Tradecoin Staking USDN: $ ${(data.value/1000000).toFixed(2)}</b><br>`
+        $(".mypanel").html(text);
+    });
+	    </script>
+	
+	<div class="mypanel5"></div>
+    <script>
+    $.getJSON('https://beta.neutrino.at/api/explorer/get_annual_yield', function(data5) {
+        
+        var text5 = `<b>Annual Yeild (Est. Last 14 payments) :</b> ${data5.toFixed(2)}%<br>`
+        $(".mypanel5").html(text5);
+    });
+	    </script>	
+		
+</div>
+<br>
+<div style="width:375px;height:80px;border:5px solid #0000; background: #0564fc; border-radius: 20px; text-align: center; font-size:15px;font-family:courier,arial,helvetica;">
+    <font color="white"><b><br>
+
+	
+	<div class="mypanel3"></div>
+	    <script>
+    $.getJSON('https://beta.neutrino.at/api/explorer/get_current_price', 
+	function(data3) {
+        var text3 = `1 WAVES = $ ${data3} USDN<br>`
+        $(".mypanel3").html(text3);
+    });
+    </script>
+
+	<div class="mypanel4"></div>
+	    <script>
+    $.getJSON('https://beta.neutrino.at/api/explorer/get_current_price', 
+	function(data4) {
+        var text4 = `1 USDN = $ ${(1/data4).toFixed(8)} WAVES<br>`
+        $(".mypanel4").html(text4);
+    });
+    </script>		
+</div>
+	
+</body>
+</html>				
+				
                             <!-- Landing page Title -->
                             <div class="column is-5 landing-caption">
                                 <h1 class="title is-1 is-light is-semibold is-spaced main-title">Cryptocurrency Exchange Market</h1>
